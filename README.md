@@ -3,4 +3,4 @@
 ### Summary
 Working in Progress
 
-<img src="https://github.com/silascaxias/nubank_clone_swiftui/assets/28634883/deac94aa-f06a-4d3f-8606-b655078077ca" width="400px"/>
+<img src="https://github.com/silascaxias/nubank_clone_swiftui/assets/28634883/0813babf-bdf4-41f7-bdb2-6f15c1ece373" width="400px"/>
