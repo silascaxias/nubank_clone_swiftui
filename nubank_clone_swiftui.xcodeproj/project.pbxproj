@@ -20,6 +20,7 @@
 		D5563BFC2A7D9E47003E56D9 /* ShortcutIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5563BFB2A7D9E47003E56D9 /* ShortcutIcon.swift */; };
 		D5563BFE2A7D9F43003E56D9 /* CardButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5563BFD2A7D9F43003E56D9 /* CardButtonView.swift */; };
 		D5563C002A7DA23F003E56D9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5563BFF2A7DA23F003E56D9 /* CardView.swift */; };
+		D5563C022A7DB618003E56D9 /* ComponentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5563C012A7DB618003E56D9 /* ComponentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		D5563BFB2A7D9E47003E56D9 /* ShortcutIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutIcon.swift; sourceTree = "<group>"; };
 		D5563BFD2A7D9F43003E56D9 /* CardButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardButtonView.swift; sourceTree = "<group>"; };
 		D5563BFF2A7DA23F003E56D9 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		D5563C012A7DB618003E56D9 /* ComponentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				D5563BFB2A7D9E47003E56D9 /* ShortcutIcon.swift */,
+				D5563C012A7DB618003E56D9 /* ComponentViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5563BF62A7D7AA8003E56D9 /* AccountView.swift in Sources */,
+				D5563C022A7DB618003E56D9 /* ComponentViewModel.swift in Sources */,
 				D5563BFE2A7D9F43003E56D9 /* CardButtonView.swift in Sources */,
 				D5563BCA2A7D7435003E56D9 /* ContentView.swift in Sources */,
 				D5563BF32A7D7776003E56D9 /* HeaderView.swift in Sources */,

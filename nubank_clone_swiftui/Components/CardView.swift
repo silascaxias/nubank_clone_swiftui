@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct CardView: View {
-    var title: String
-    var action: () -> Void
+    var viewModel: ComponentViewModel
 
     var body: some View {
         Button {
-            action()
+            viewModel.action()
         } label: {
-            Text(title)
+            Text(viewModel.title)
                 .fontWeight(.regular)
                 .multilineTextAlignment(.leading)
                 .font(.system(size: 14.0))

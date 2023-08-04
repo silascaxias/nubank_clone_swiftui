@@ -8,24 +8,22 @@
 import SwiftUI
 
 struct CircleButtonView: View {
-    var title: String
-    var icon: String
-    var action: () -> Void
+    var viewModel: ComponentViewModel
 
     var body: some View {
         HStack(alignment: .top) {
             Button {
-                action()
+                viewModel.action()
             } label: {
                 VStack(alignment: .center) {
                     ZStack {
                         Circle().foregroundColor(Color("CardBackground"))
                             .frame(width: 80.0, height: 90.0)
-                        Image(systemName: icon)
+                        Image(systemName: viewModel.iconName ?? "")
                             .font(.title3)
                             .padding(10.0)
                     }
-                    Text(title)
+                    Text(viewModel.title)
                         .font(.system(size: 15))
                 }
                 .foregroundColor(.primary)

@@ -39,21 +39,21 @@ struct AccountView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top) {
                     ForEach(shortcutSection, id: \.hashValue) { shortcut in
-                        CircleButtonView(title: shortcut.title, icon: shortcut.icon) {
+                        CircleButtonView(viewModel: ComponentViewModel(title: shortcut.title, iconName: shortcut.icon) {
                             print("\(shortcut.title) button action.")
-                        }
+                        })
                     }
                 }
             }
-            CardButtonView(title: "Meus Cartões", icon: "lanyardcard") {
+            CardButtonView(viewModel: ComponentViewModel(title: "Meus Cartões", iconName: "lanyardcard") {
                 print("Meus Cartões button action.")
-            }
+            })
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top) {
                     ForEach(othersSection, id: \.hashValue) { title in
-                        CardView(title: title) {
+                        CardView(viewModel: ComponentViewModel(title: title) {
                             print("\(title) button action.")
-                        }
+                        })
                     }
                 }
             }

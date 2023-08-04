@@ -8,18 +8,16 @@
 import SwiftUI
 
 struct CardButtonView: View {
-    var title: String
-    var icon: String
-    var action: () -> Void
+    var viewModel: ComponentViewModel
 
     var body: some View {
         Button {
-            action()
+            viewModel.action()
         } label: {
             HStack {
-                Image(systemName: icon)
+                Image(systemName: viewModel.iconName ?? "")
                     .font(.title2)
-                Text(title)
+                Text(viewModel.title)
                     .padding(.leading)
                 Spacer()
             }
