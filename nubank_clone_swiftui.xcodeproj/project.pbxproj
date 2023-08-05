@@ -21,6 +21,8 @@
 		D5563BFE2A7D9F43003E56D9 /* CardButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5563BFD2A7D9F43003E56D9 /* CardButtonView.swift */; };
 		D5563C002A7DA23F003E56D9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5563BFF2A7DA23F003E56D9 /* CardView.swift */; };
 		D5563C022A7DB618003E56D9 /* ComponentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5563C012A7DB618003E56D9 /* ComponentViewModel.swift */; };
+		D55FB4692A7DD79F00886E4D /* CurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55FB4682A7DD79F00886E4D /* CurrencyView.swift */; };
+		D55FB46B2A7DDCAB00886E4D /* CurrencyViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55FB46A2A7DDCAB00886E4D /* CurrencyViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		D5563BFD2A7D9F43003E56D9 /* CardButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardButtonView.swift; sourceTree = "<group>"; };
 		D5563BFF2A7DA23F003E56D9 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		D5563C012A7DB618003E56D9 /* ComponentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentViewModel.swift; sourceTree = "<group>"; };
+		D55FB4682A7DD79F00886E4D /* CurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyView.swift; sourceTree = "<group>"; };
+		D55FB46A2A7DDCAB00886E4D /* CurrencyViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,10 +112,9 @@
 		D5563BC62A7D7435003E56D9 /* nubank_clone_swiftui */ = {
 			isa = PBXGroup;
 			children = (
+				D55FB4662A7DD74300886E4D /* Views */,
 				D5563BFA2A7D9E29003E56D9 /* Models */,
 				D5563BF72A7D8712003E56D9 /* Components */,
-				D5563BF42A7D7A96003E56D9 /* Account */,
-				D5563BF12A7D7758003E56D9 /* Header */,
 				D5563BC72A7D7435003E56D9 /* nubank_clone_swiftuiApp.swift */,
 				D5563BC92A7D7435003E56D9 /* ContentView.swift */,
 				D5563BCB2A7D7439003E56D9 /* Assets.xcassets */,
@@ -164,6 +167,7 @@
 		D5563BF72A7D8712003E56D9 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D55FB4682A7DD79F00886E4D /* CurrencyView.swift */,
 				D5563BF82A7D872A003E56D9 /* CircleButtonView.swift */,
 				D5563BFD2A7D9F43003E56D9 /* CardButtonView.swift */,
 				D5563BFF2A7DA23F003E56D9 /* CardView.swift */,
@@ -176,8 +180,18 @@
 			children = (
 				D5563BFB2A7D9E47003E56D9 /* ShortcutIcon.swift */,
 				D5563C012A7DB618003E56D9 /* ComponentViewModel.swift */,
+				D55FB46A2A7DDCAB00886E4D /* CurrencyViewViewModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D55FB4662A7DD74300886E4D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D5563BF12A7D7758003E56D9 /* Header */,
+				D5563BF42A7D7A96003E56D9 /* Account */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,7 +327,9 @@
 				D5563BF62A7D7AA8003E56D9 /* AccountView.swift in Sources */,
 				D5563C022A7DB618003E56D9 /* ComponentViewModel.swift in Sources */,
 				D5563BFE2A7D9F43003E56D9 /* CardButtonView.swift in Sources */,
+				D55FB4692A7DD79F00886E4D /* CurrencyView.swift in Sources */,
 				D5563BCA2A7D7435003E56D9 /* ContentView.swift in Sources */,
+				D55FB46B2A7DDCAB00886E4D /* CurrencyViewViewModel.swift in Sources */,
 				D5563BF32A7D7776003E56D9 /* HeaderView.swift in Sources */,
 				D5563BF92A7D872A003E56D9 /* CircleButtonView.swift in Sources */,
 				D5563BC82A7D7435003E56D9 /* nubank_clone_swiftuiApp.swift in Sources */,

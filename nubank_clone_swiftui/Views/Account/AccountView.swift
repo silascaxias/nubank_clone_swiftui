@@ -17,9 +17,8 @@ let shortcutSection: [ShortcutIcon] = [
 
 let othersSection: [String] = [
     "Dinheiro Extra no fim do Ano? Guarde nas Caixinhas!",
-    "Dinheiro Extra no fim do Ano? Guarde nas Caixinhas!",
-    "Dinheiro Extra no fim do Ano? Guarde nas Caixinhas!",
-    "Dinheiro Extra no fim do Ano? Guarde nas Caixinhas!",
+    "Chegou a hora! Escolha o que fazer com o seu BDR no Nu.",
+    "Convide amigos para o nubank."
 ]
 
 struct AccountView: View {
@@ -31,11 +30,18 @@ struct AccountView: View {
                     .fontWeight(.medium)
                 Spacer()
                 Image(systemName: "chevron.right")
+                    .padding(.trailing, 8.0)
             }
-            .padding()
+            .padding(.horizontal)
+            .padding(.top, 24.0)
+            .padding(.bottom, 2.0)
             Text("R$ 5.000,95")
                 .fontWeight(.medium)
                 .padding(.horizontal)
+            Text("R$ 0,00 em outro banco")
+                .padding()
+                .font(.system(size: 15.0))
+                .foregroundColor(Color.gray)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top) {
                     ForEach(shortcutSection, id: \.hashValue) { shortcut in
@@ -56,8 +62,8 @@ struct AccountView: View {
                         })
                     }
                 }
-            }
-        }
+            }.padding(.bottom, 10.0)
+        }.padding(.horizontal)
     }
 }
 

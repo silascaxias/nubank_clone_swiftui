@@ -15,7 +15,7 @@ struct CardButtonView: View {
             viewModel.action()
         } label: {
             HStack {
-                Image(systemName: viewModel.iconName ?? "")
+                Image(systemName: viewModel.iconName)
                     .font(.title2)
                 Text(viewModel.title)
                     .padding(.leading)
@@ -26,7 +26,8 @@ struct CardButtonView: View {
             .frame(width: 350.0, height: 60.0)
             .background(Color("CardBackground"))
             .cornerRadius(16.0)
-            .padding()
+            .padding(.horizontal, 8.0)
+            .padding(.top, 16.0)
         }
     }
 }

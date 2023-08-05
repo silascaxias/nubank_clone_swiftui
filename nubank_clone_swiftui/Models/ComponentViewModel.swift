@@ -9,6 +9,6 @@ import Foundation
 
 struct ComponentViewModel {
     var title: String
-    var iconName: String?
+    var iconName: String = ""
     var action: () -> Void
 }

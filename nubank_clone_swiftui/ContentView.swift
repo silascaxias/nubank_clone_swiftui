@@ -9,10 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack() {
+        VStack {
             HeaderView()
-            AccountView()
-            Spacer()
+            ScrollView {
+                AccountView()
+                Divider()
+                    .frame(height: 1.0)
+                    .background(Color("CardBackground"))
+                CurrencyView(viewModel: CurrencyViewViewModel(title: "Cartão de crédito",
+                                                              subTitle: "Fatura atual",
+                                                              value: "R$ 500,00",
+                                                              description: "Limite disponível de R$ 495,12"))
+                Divider()
+                    .frame(height: 1.0)
+                    .background(Color("CardBackground"))
+                CurrencyView(viewModel: CurrencyViewViewModel(title: "Empréstimo",
+                                                              subTitle: "Valor disponível de até",
+                                                              value: "R$ 15.000,00"))
+                Spacer()
+            }
         }
     }
 }

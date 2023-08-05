@@ -19,7 +19,7 @@ struct CircleButtonView: View {
                     ZStack {
                         Circle().foregroundColor(Color("CardBackground"))
                             .frame(width: 80.0, height: 90.0)
-                        Image(systemName: viewModel.iconName ?? "")
+                        Image(systemName: viewModel.iconName)
                             .font(.title3)
                             .padding(10.0)
                     }

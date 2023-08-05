@@ -24,6 +24,7 @@ struct CardView: View {
                 .cornerRadius(16.0)
                 .foregroundColor(.primary)
                 .padding([.leading, .top])
+                .padding(.bottom, 8.0)
         }
 
     }

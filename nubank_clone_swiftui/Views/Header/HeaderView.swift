@@ -10,7 +10,7 @@ import SwiftUI
 struct HeaderView: View {
     var body: some View {
         VStack(alignment: .leading) {
-            HStack {
+            HStack(spacing: 28.0) {
                 Image(systemName: "person")
                     .padding(12)
                     .background(Circle().foregroundColor(.white).opacity(0.2))
@@ -22,7 +22,7 @@ struct HeaderView: View {
             .font(.title3)
             .padding()
             Text("Olá, Silas")
-                .font(.title2)
+                .font(.title3)
                 .padding()
         }
         .fontWeight(.medium)
